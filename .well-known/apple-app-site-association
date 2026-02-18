@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "XXXXXXXXXX.com.mindslinked.app",
+        "paths": ["/mindslinked-landing/join*"]
+      }
+    ]
+  }
+}
