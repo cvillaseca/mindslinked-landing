@@ -9,9 +9,9 @@ Landing page for the MindsLinked app.
 3. Go to Settings → Pages → Source: main branch → Save
 4. Site will be live at https://username.github.io/mindslinked-landing
 
-## Custom Domain (mindslinked.app)
+## Custom Domain (mindslinked.com)
 
-1. Add a `CNAME` file with content: `mindslinked.app`
+1. Add a `CNAME` file with content: `mindslinked.com`
 2. In your domain registrar, add a CNAME record: `www → username.github.io`
 3. For apex domain, add A records pointing to GitHub Pages IPs:
    185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
