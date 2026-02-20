@@ -44,14 +44,18 @@ header .container {
   font-size: 1.25rem; font-weight: 700; letter-spacing: -0.02em;
   background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
   background-clip: text;
-  display: inline-flex; align-items: center; gap: 8px;
+  display: inline-flex !important; align-items: center; gap: 8px;
 }
-.logo-icon {
-  height: 36px; width: 36px; border-radius: 50%;
-  flex-shrink: 0; /* prevent squishing */
+.logo .logo-icon,
+.logo img {
+  height: 36px !important; width: 36px !important; 
+  max-height: 36px !important; max-width: 36px !important;
+  border-radius: 50%;
+  flex-shrink: 0;
 }
-@media (max-width: 400px) {
-  .logo-icon { display: none; } /* hide logo on very narrow screens */
+@media (max-width: 500px) {
+  .logo .logo-icon,
+  .logo img { display: none !important; }
 }
 nav a { margin-left: 28px; font-size: .9rem; color: var(--text-muted); font-weight: 500; }
 nav a:hover { color: var(--text-bright); }
