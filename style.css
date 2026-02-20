@@ -44,6 +44,14 @@ header .container {
   font-size: 1.25rem; font-weight: 700; letter-spacing: -0.02em;
   background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
   background-clip: text;
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.logo-icon {
+  height: 36px; width: 36px; border-radius: 50%;
+  flex-shrink: 0; /* prevent squishing */
+}
+@media (max-width: 400px) {
+  .logo-icon { display: none; } /* hide logo on very narrow screens */
 }
 nav a { margin-left: 28px; font-size: .9rem; color: var(--text-muted); font-weight: 500; }
 nav a:hover { color: var(--text-bright); }
