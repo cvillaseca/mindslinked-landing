@@ -85,7 +85,38 @@ nav a:hover { color: var(--text-bright); }
 .hero .tagline { font-size: clamp(1.1rem, 2.5vw, 1.5rem); color: var(--text-bright); font-weight: 500; margin-bottom: 12px; }
 .hero .subtext { font-size: 1.05rem; color: var(--text-muted); max-width: 500px; margin: 0 auto 40px; }
 
-.cta-group { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.cta-group { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; align-items: center; }
+
+/* Store Badges */
+.store-badge {
+  display: inline-block;
+  transition: transform .2s, opacity .2s;
+}
+.store-badge:hover { transform: translateY(-2px); opacity: 0.9; }
+.store-badge img { display: block; height: 60px; }
+
+.store-badge-wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: not-allowed;
+}
+.store-badge-wrapper img { display: block; height: 60px; }
+.coming-soon-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(167,139,250,0.9);
+  color: #0a0014;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 14px 32px; border-radius: 50px; font-weight: 600; font-size: .95rem;
